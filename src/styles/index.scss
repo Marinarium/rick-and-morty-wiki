@@ -1,0 +1,12 @@
+@import "reset";
+@import "abstracts/variables.scss";
+
+body {
+    font: var(--font-m);
+}
+
+.app {
+    background-color: var(--color-light);
+    color: var(--color-basic);
+    min-height: 100vh;
+}

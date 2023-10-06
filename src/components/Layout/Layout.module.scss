@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: var(--color-dark);
+}
+
+.logo {
+    width: 300px;
+    object-fit: contain;
+}
+

@@ -7,6 +7,7 @@ import LocationsPages from './pages/LocationsPage/LocationsPages';
 import EpisodesPage from './pages/EpisodesPage/EpisodesPage';
 import Page404 from './pages/Page404/Page404';
 import HomePage from './pages/HomePage/HomePage';
+import CharacterPage from './pages/CharacterPage/CharacterPage';
 
 function App () {
     return (
@@ -15,6 +16,7 @@ function App () {
                 <Route path="/" element={<Layout/>}>
                     <Route index element={<HomePage/>}/>
                     <Route path="/characters" element={<CharactersPage/>}/>
+                    <Route path="/characters/:id" element={<CharacterPage/>}/>
                     <Route path="/about" element={<AboutPage/>}/>
                     <Route path="/locations" element={<LocationsPages/>}/>
                     <Route path="/episodes" element={<EpisodesPage/>}/>

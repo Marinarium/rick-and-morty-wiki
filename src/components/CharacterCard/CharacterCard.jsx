@@ -3,9 +3,11 @@ import cl from './CharacterCard.module.scss';
 import { characterGender, characterStatus } from '../../constants/characters';
 import classNames from 'classnames';
 import SVGIcon from '../SVGIcon/SVGIcon';
+import { useNavigate } from 'react-router-dom';
 
 const CharacterCard = ({ character }) => {
-    const { name, image, status, origin, gender, species, location } = character;
+    const { name, image, status, origin, gender, species, location, id } = character;
+    const navigate = useNavigate();
 
     const nameStyles = {
         [cl.nameFemale]: gender === characterGender.female,
@@ -45,6 +47,7 @@ const CharacterCard = ({ character }) => {
                         height={16}
                         idValue="location"/>
                     {location.name}</p>
+                <button onClick={() => {navigate(`/characters/${id}`)}}>More about this character</button>
             </div>
         </li>
     );

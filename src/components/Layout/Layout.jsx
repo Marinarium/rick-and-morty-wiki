@@ -5,7 +5,7 @@ import cl from './Layout.module.scss';
 
 const Layout = () => {
     return (
-        <div>
+        <div className={cl.wrap}>
             <header className={cl.header}>
                 <Link to="/">
                     <img className={cl.logo}  src="/img/logo.png" alt="logotype" />

@@ -12,9 +12,10 @@ const Layout = () => {
                 </Link>
                 <Navigation/>
             </header>
-            <main>
+            <main className={cl.main}>
                 <Outlet/>
             </main>
+            <footer className={cl.footer}>&lt; &gt; by <a className={cl.link} href="https://github.com/Marinarium">Schwabauer Marina</a> 2023</footer>
         </div>
 );
 };

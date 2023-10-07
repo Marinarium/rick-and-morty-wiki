@@ -1,0 +1,62 @@
+.card {
+    list-style: none;
+    display: flex;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.info {
+    padding: 20px 20px 20px 30px;
+}
+
+.name {
+    margin-bottom: 10px;
+
+    &Female {
+        color: var(--color-pink);
+    }
+    &Genderless {
+        color: var(--color-turkoise);
+    }
+    &Male {
+        color: var(--color-primary);
+    }
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+
+    &Dead svg{
+        color: var(--color-accent);
+    }
+
+    &Alive svg{
+        color: var(--color-turkoise);
+    }
+}
+
+.origin {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}

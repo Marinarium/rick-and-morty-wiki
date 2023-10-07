@@ -4,6 +4,7 @@
     align-items: center;
     padding: 20px 40px;
     background-color: var(--color-dark);
+    margin-bottom: 40px;
 }
 
 .logo {
@@ -11,3 +12,28 @@
     object-fit: contain;
 }
 
+.main {
+    padding: 0 40px;
+    margin-bottom: 70px;
+}
+
+.footer {
+    background-color: var(--color-dark);
+    color: var(--color-gray);
+    font-size: 16px;
+    text-align: center;
+    padding: 50px 40px 40px;
+}
+
+.link {
+    color: var(--color-light);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    border-bottom: 1px solid var(--color-orange);
+    padding-bottom: 2px;
+
+    &:hover {
+        color: var(--color-orange);
+        border-color: var(--color-dark);
+    }
+}

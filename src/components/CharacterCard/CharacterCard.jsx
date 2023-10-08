@@ -21,7 +21,7 @@ const CharacterCard = ({ character }) => {
     };
 
     return (
-        <li className={cl.card}>
+        <li onClick={() => {navigate(`/characters/${id}`)}} className={cl.card}>
             <img className={cl.img} src={image} alt={name}/>
             <div className={cl.info}>
                 <h2 className={classNames(cl.name, nameStyles)}>{name}</h2>
@@ -47,7 +47,6 @@ const CharacterCard = ({ character }) => {
                         height={16}
                         idValue="location"/>
                     {location.name}</p>
-                <button onClick={() => {navigate(`/characters/${id}`)}}>More about this character</button>
             </div>
         </li>
     );

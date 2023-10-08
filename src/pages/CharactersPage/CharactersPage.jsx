@@ -11,7 +11,7 @@ const CharactersPage = () => {
 
     const [fetchCharacters, isLoading, charactersError] = useFetch(async () => {
         const response = await APIService.getCharacters();
-        setCharacters(response.data);
+        setCharacters(response.data.results);
     });
 
     useEffect(() => {
@@ -22,7 +22,7 @@ const CharactersPage = () => {
         <div>
             <MainTitle>Characters</MainTitle>
             {charactersError && <p>Error: ${charactersError}</p>}
-            {isLoading
+            {isLoading || charactersError
                 ? <Loader/>
                 : <CardList>
                     {characters.map((character) => <CharacterCard key={character.id} character={character}/>)}

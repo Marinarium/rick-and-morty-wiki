@@ -5,6 +5,14 @@
     color: var(--color-light);
     border-radius: 5px;
     overflow: hidden;
+    cursor: pointer;
+    transition-duration: 250ms;
+
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: 4px 4px 10px -1px rgba(36, 50, 95, 0.13);
+        //background-color: var(--color-basic);
+    }
 }
 
 .img {
